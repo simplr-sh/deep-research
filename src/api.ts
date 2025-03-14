@@ -18,7 +18,8 @@ function log(...args: any[]) {
 // API endpoint to run research
 app.post('/api/research', async (req: Request, res: Response) => {
   try {
-    const { query, depth = 3, breadth = 3 } = req.body;
+    const { query, depth = 2, breadth = 4 } = req.body;
+    console.log('query', query);
 
     if (!query) {
       return res.status(400).json({ error: 'Query is required' });

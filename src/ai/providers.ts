@@ -30,7 +30,7 @@ const customModel = process.env.CUSTOM_MODEL
 // Models
 
 const o3MiniModel = openai?.('o3-mini', {
-  reasoningEffort: 'medium',
+  reasoningEffort: 'high',
   structuredOutputs: true,
 });
 
